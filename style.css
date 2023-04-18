@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url(./Houses_Mansion_Design_Pools_Clouds_513253_1024x1024.jpg);
+    background-repeat: no-repeat;
+}
+h1 {
+    margin-top: 0;
+}
+label {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    margin-right: 10px;
+}
+input[type="text"] {
+    width: 200px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+button {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #3E8E41;
+}
+#funcionarios {
+    text-align: left;
+    margin: 0 auto;
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+#funcionarios p {
+    margin: 5px 0;
+}
+#soma-salarios {
+    margin-top: 20px;
+    font-weight: bold;
+}
+.prime{
+    background-color: rgba(0, 0, 0, 0.322);
+    border-radius: 20px 30px;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <title>Lista de Funcionários</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        var somaSalarios = 0;
+
+        function adicionarFuncionario() {
+            // obtém os valores do nome e do salário do usuário
+            var nome = document.getElementById("nome").value;
+            var salario = parseFloat(document.getElementById("salario").value);
+
+            // cria um elemento de parágrafo e define seu texto com os valores inseridos pelo usuário
+            var p = document.createElement("p");
+            var texto = document.createTextNode(nome + " - R$" + salario.toFixed(2));
+            p.appendChild(texto);
+
+            // adiciona o elemento de parágrafo à div de funcionários
+            var divFuncionarios = document.getElementById("funcionarios");
+            divFuncionarios.appendChild(p);
+
+            // adiciona o salário ao total e exibe na página
+            somaSalarios += salario;
+            document.getElementById("soma-salarios").innerHTML = "Total de salários: R$" + somaSalarios.toFixed(2);
+
+            // limpa os campos de nome e salário
+            document.getElementById("nome").value = "";
+            document.getElementById("salario").value = "";
+        }
+    </script>
+    
+</head>
+<body>
+    <div class="prime">
+        <h1>Lista de Funcionários</h1>
+
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome">
+    
+        <label for="salario">Salário:</label>
+        <input type="text" id="salario">
+    
+        <button onclick="adicionarFuncionario()">Adicionar Funcionário</button>
+    
+        <div id="funcionarios"></div>
+    
+        <p id="soma-salarios">Total de salários: R$0.00</p>
+    </div>
+    
+</body>
+</html>

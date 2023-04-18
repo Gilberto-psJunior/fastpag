@@ -1,0 +1,2 @@
+programa para registrar funcionarios e seus salarios
+e depois calcular o total para realizar os pagamentos em meu trabalho
